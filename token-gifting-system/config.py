@@ -1,0 +1,68 @@
+ISTESTNET = True
+# Collection details
+if ISTESTNET:
+    COLLECTION_MAX_NFT_INDEX = 10
+    COLLECTION_NFT_INDEXES = []
+    for index in range(COLLECTION_MAX_NFT_INDEX):
+        COLLECTION_NFT_INDEXES.append(index + 1)
+
+else:
+    COLLECTION_MAX_NFT_INDEX = 0
+    COLLECTION_NFT_INDEXES = []
+    for index in range(COLLECTION_MAX_NFT_INDEX):
+        COLLECTION_NFT_INDEXES.append(index + 1)
+
+COLLECTIONS_NAME = {1:''}
+COLLECTION_IDS = {1:''}
+
+NON_GIFTING_COLLECTIONS = {1:''}
+NON_GIFTING_COLLECTIONS_IDS = {1:''}
+
+
+# Updater settings
+RUN_INITAL_UPDATE = False
+UPDATER_SKIP_RECENTLY_UPDATED = True
+UPDATER_SKIP_THRESHOLD = 86400
+UPDATER_START_INDEX = 1
+UPDATER_DELAY_BETWEEN_TASKS = 0  # Add 5 seconds to each task as it is sent to the task manager
+UPDATER_DELAY_BETWEEN_API_TASKS = 5
+UPDATER_MAX_RETRIES_PER_INDEX = 2
+
+testnet = False
+
+# COnfiguration to do with the log files 
+LOG_PATH = './logs/'
+
+if ISTESTNET:
+    DB_CONFIG_PATH = "./tests/dummy_data/"
+    DB_CONFIG_FILENAME = "testnet_db.db"
+else:
+    DB_CONFIG_PATH = "./db/"
+    DB_CONFIG_FILENAME = "GiftingSystem.db"
+
+
+# Distrubution configs
+RUN_DISTRIBUTION = False
+
+
+# Wallet 
+TOKEN_WALLET_FINGERPRINT = 0 
+TOKEN_WALLET_ID = 2
+XCH_WALLET_ID = 1
+MOJO_TO_TOKEN_MULTIPLIER = 1000
+DEFAULT_MOJO_FEE = 50
+OWN_ADDRESS = ""
+
+MIN_ALLOWED_TOKEN_BALANCE = 100000
+MIN_ALLOWED_XCH_BALANCE = 1000
+MIN_COIN_SIZE = 100000
+
+
+# Updater cycling 
+UPDATER_DELTA_DAY = 1
+UPDATER_HOUR = 12
+UPDATER_MINUTE = 00
+
+# Distribution start delays
+DISTRIBUTOR_START_HOUR = 20
+DISTRIBUTOR_START_MINUTE = 00

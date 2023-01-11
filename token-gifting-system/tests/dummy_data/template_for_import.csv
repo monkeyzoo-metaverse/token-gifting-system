@@ -1,0 +1,5 @@
+No Colc, Table Name, PK Name, PK type, Column Name 1, Column Type 1, Column Name N, Column Type N 
+INT    , Str       , Str    , Str    , Str          , Str          , Str          , Str     
+Records
+PK, Column Name 1, Column Name N
+INT, INT/STR     , INT/STR
