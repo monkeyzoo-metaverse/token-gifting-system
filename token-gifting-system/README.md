@@ -1,14 +1,13 @@
-# yield-management-system
+# Token Gifting System
 Backend system for correcting NFT ownership information and distributing tokens to those ownership addresses  
 
 ## Documentation 
 
-[/docs](./doc/yms.md) Overview of system
+[/docs](./doc/tgs.md) Overview of system
+
 [/db](./doc/db.md) Database handling 
 
-/tests
-
-contain unit tests for system
+[/tests](./doc/test.md) Contains unit tests for system
 
 
 

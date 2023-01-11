@@ -1,7 +1,7 @@
-# Yield Management System
+# Token Gifting System
 
 ## Overview
-The yield management system takes known Chia NFT IDs and performs the following tasks.
+The Token Gifting System takes known Chia NFT IDs and performs the following tasks.
 
 + Gathers information on the current NFT owner
 + Assertains a the level of reward required for each NFT
